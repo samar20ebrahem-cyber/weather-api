@@ -8,3 +8,12 @@ body{
   background-image: url(../src/assets/2.png) ;
   background: center cover no-repeat;
 }
+
+header {
+    direction: inherit;
+}
+
+.weather-card {
+    direction: inherit;
+    text-align: start;
+}

@@ -12,6 +12,9 @@
     color: white;
 }
 
+header{
+    direction: inherit;
+}
 .weather-header {
     display: flex;
     justify-content: space-between;

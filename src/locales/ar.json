@@ -1,0 +1,20 @@
+{
+  "weather": {
+    "location": "البحيرة، مصر",
+    "appName": "Aeris",
+    "subtitle": "الطقس الآن",
+    "min": "الصغرى",
+    "max": "العظمى",
+    "clearSky": "سماء صافية",
+    "partlyCloudy": "غائم جزئيًا",
+    "fog": "ضباب",
+    "drizzle": "رذاذ",
+    "rain": "ممطر",
+    "snow": "ثلوج",
+    "rainShowers": "زخات مطرية",
+    "thunderstorm": "عاصفة رعدية",
+    "unknown": "غير معروف",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  }
+}

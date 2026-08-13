@@ -1,0 +1,20 @@
+{
+    "weather": {
+        "location": "Beheira, Egypt",
+        "appName": "Aeris",
+        "subtitle": "Live weather",
+        "min": "Min",
+        "max": "Max",
+        "clearSky": "Clear sky",
+        "partlyCloudy": "Partly cloudy",
+        "fog": "Fog",
+        "drizzle": "Drizzle",
+        "rain": "Rain",
+        "snow": "Snow",
+        "rainShowers": "Rain showers",
+        "thunderstorm": "Thunderstorm",
+        "unknown": "Unknown",
+        "english": "English",
+        "arabic": "Arabic"
+    }
+}

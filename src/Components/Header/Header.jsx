@@ -1,8 +1,9 @@
 import '../Header/Header.css'
 import { LanguageToggle } from '../LanguageToggle/LanguageToggle.jsx'
-import { WiDayCloudy } from "react-icons/wi";
-import { Options } from '../Options/Options.jsx'
+import { WiDayCloudy } from "react-icons/wi"
+import { useTranslation } from "react-i18next"
 export function Header() {
+    const { t } = useTranslation()
     return (
         <>
             <header>
@@ -11,12 +12,11 @@ export function Header() {
                         < WiDayCloudy className='icon' />
                     </div>
                     <div className="logo-title">
-                        <h3>Aeris</h3>
-                        <p>Live weather </p>
+                        <h3>{t("weather.appName")}</h3>
+                        <p>{t("weather.subtitle")} </p>
                     </div>
                 </div>
                 <LanguageToggle />
-                <Options />
             </header>
         </>
     )
