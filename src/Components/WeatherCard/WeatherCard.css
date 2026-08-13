@@ -1,0 +1,132 @@
+.weather-card {
+    width: min(90%, 700px);
+    margin: 5px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 30px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.weather-location h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.weather-location p {
+    margin: 6px 0 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px 0;
+}
+
+.temperature h1 {
+    margin: 0;
+
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.temperature span {
+    font-size: 35px;
+    margin-left: 8px;
+}
+
+.weather-description {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0 30px;
+}
+
+.temperature-range {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.temperature-range div {
+    text-align: center;
+}
+
+.temperature-range p {
+    margin: 4px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.temperature-range strong {
+    font-size: 20px;
+}
+
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.weather-icon svg {
+    width: 110px;
+    height: 110px;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
+    animation: floatWeather 3s ease-in-out infinite;
+}
+
+@keyframes floatWeather {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .weather-card {
+        padding: 25px;
+    }
+
+    .temperature h1 {
+        font-size: 70px;
+    }
+
+    .temperature span {
+        font-size: 25px;
+    }
+
+    .weather-location h2 {
+        font-size: 23px;
+    }
+
+    .temperature-range {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,31 @@
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+}
+
+.lang button {
+    color: white;
+    padding: 10px 24px;
+    background: transparent;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.lang button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.lang .active {
+    background: #6eb9f5;
+    transform: none;
+}
